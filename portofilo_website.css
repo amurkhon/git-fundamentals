@@ -1,0 +1,222 @@
+/* Core styles */
+body{
+  font-family: sans-serif;
+}
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+.to-uppercase{
+  text-transform: uppercase;
+}
+.clearfix{
+  clear: both;
+}
+.main-header_brand{
+  display: inline-block;
+  vertical-align: middle;
+}
+/* Main header styles */
+.main-header{
+  position: fixed;
+  background-color: #f8faff;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 100%);
+}
+.main-header_brand img{
+  width: 64px;
+} 
+.main-navigation{
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-navigation-item{
+  display: inline-block;
+  padding: 10px;
+}
+.main-navigation-item a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+
+}
+.main-navigation-item a:hover{
+  text-decoration: none;
+  opacity: 30%;
+}
+/* Main section */
+.main-banner{
+  background: url(../img/banner/home-banner.png) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+}
+.main-section{
+  padding: 100px 30px ;
+}
+.main-section > div{
+  width: 50%;
+  float: left;
+}
+.main-section_image{
+  text-align: right;
+}
+.main-section_welcome{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #797979;
+}
+.main-section_introduction{
+  margin-top: 20px;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #05364e;
+}
+.main-section_position{
+  color: #05364e;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.main-section_social-networks a{
+  color: #8fa1aa;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.main-section_social-networks a:hover i{
+  color: #1c44e4;
+}
+.main-section_action{
+  margin-top: 30px;
+  border: none;
+  background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+  background-size: 200% auto;
+  color: #FFFFFF;
+  font-weight: 500;
+  padding: 20px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.main-section_action:hover{
+  background-position: right center;
+  transition-duration: 1s;
+}
+/*Statistics section*/
+.statistics{
+  padding-top: 100px;
+  float: left;
+
+}
+.statistics_item{
+  display: inline-block;
+  background-color: #f8faff;
+  text-align: center;
+  padding: 5px 15px;
+  margin-left: 50px;
+  width: 150px;
+}
+.statistics_number{
+  font-size: 27px;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.statistics_title{
+  font-size: 16px;
+  color: #797979;
+  font-weight: 300;
+}
+/*Portfolio section styles*/
+.portfolio{
+  padding: 100px 0px;
+}
+.portfolio-filters{
+  list-style: none;
+  padding-left: 0;
+  margin-top: 50px;
+}
+.portfolio-filters li{
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #05364d;
+  cursor: pointer;
+}
+.portfolio-filters li:hover,
+.portfolio-filters li.active{
+  color: #1c44e4;
+}
+.portfolio-item{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.portfolio-item-1{
+  padding-left: 0;
+}
+.portfolio-item-2{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.portfolio-item-3{
+  position: absolute;
+  right: 0;
+  top: 326.17px;
+}
+.portfolio-items{
+  position: relative;
+  margin-top: 50px;
+}
+.portfolio-item img{
+  width: 100%;
+}
+.portfolio-item_overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(19, 69, 230, 0.9);
+  visibility: hidden;
+  z-index: 1;
+}
+.portfolio-item_info{
+  position: absolute;
+  bottom: 44px;
+  left: 80px;
+  color:white;
+  visibility: hidden;
+  z-index: 1;
+}
+.portfolio-item_info a{
+  color: white;
+  text-decoration: none;
+}
+.portfolio-item:hover .portfolio-item_overlay{
+  visibility: visible;
+  top: 10px;
+  left: 10px;
+  transition: all 0.4s ease 0s;
+}
+.portfolio-item:hover .portfolio-item_info{
+  visibility: visible;
+}
